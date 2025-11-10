@@ -1,8 +1,13 @@
 {
   "name": "aristobyte-ui-template-vite",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=20.19.0",
+    "yarn": "1.22.22"
+  },
+  "packageManager": "yarn@1.22.22",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -10,32 +15,37 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@aristobyte-ui/anchor": "^1.0.44",
-    "@aristobyte-ui/button": "^1.0.44",
-    "@aristobyte-ui/card": "^1.0.44",
-    "@aristobyte-ui/label": "^1.0.44",
-    "@aristobyte-ui/utils": "^1.0.44",
-    "next": "^15.5.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "sass": "^1.92.1"
+    "@aristobyte-ui/anchor": "^1.0.109",
+    "@aristobyte-ui/button": "^1.0.109",
+    "@aristobyte-ui/eslint-config": "^1.0.109",
+    "@aristobyte-ui/label": "^1.0.109",
+    "@aristobyte-ui/theme": "^1.0.109",
+    "@aristobyte-ui/typescript-config": "^1.0.109",
+    "@aristobyte-ui/utils": "^1.0.109",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.17",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "tailwindcss": "^4.1.17"
   },
   "devDependencies": {
-    "@aristobyte-ui/eslint-config": "^1.0.44",
-    "@aristobyte-ui/typescript-config": "^1.0.44",
-    "@eslint/js": "^9.33.0",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.39.1",
     "@svgr/webpack": "^8.1.0",
-    "@types/node": "^22.15.29",
-    "@types/react": "^19.1.6",
-    "@types/react-dom": "^19.1.6",
-    "@vitejs/plugin-react": "^5.0.0",
-    "eslint": "^9.27.0",
+    "@types/node": "^22.19.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "^16.0.1",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-react-refresh": "^0.4.20",
-    "globals": "^16.3.0",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
     "raw-loader": "^4.0.2",
-    "typescript": "5.8.2",
-    "typescript-eslint": "^8.39.1",
-    "vite": "^7.1.2"
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.3",
+    "vite": "^7.2.2"
   }
 }

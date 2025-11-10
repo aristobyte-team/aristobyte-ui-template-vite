@@ -1,0 +1,27 @@
+@keyframes glow {
+  0%,
+  20% {
+    transform: translate3d(0px, -190%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    animation-timing-function: var(--bubble-animation);
+  }
+  100% {
+    transform: translate3d(0px, -140%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    animation-timing-function: var(--bubble-animation);
+  }
+}
+
+.gradient {
+  animation: glow 10s infinite alternate;
+  background-image: var(--logo-gradient);
+  bottom: 0;
+  filter: blur(150px);
+  height: 60%;
+  position: absolute;
+  transform: translate3d(0px, -200%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+  width: 100%;
+  will-change: transform, width, height;
+}
